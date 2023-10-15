@@ -1,0 +1,119 @@
+.root {
+  position: relative;
+}
+
+.input {
+  border: 1px solid var(--input_border);
+  padding: 12px 15px;
+  padding-left: 42px;
+  width: 350px;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.15s ease-in-out;
+  background-color: var(--body_backround);
+}
+
+.input:focus {
+  width: 550px;
+  border: 1px solid #ffdf8c;
+  color: #ffdf8c;
+  outline: none;
+}
+@media (max-width: 900px) {
+  .input {
+    padding: 8px 5px;
+    margin-top: 14px;
+    padding-left: 42px;
+  }
+  .input:focus {
+    width: 550px;
+  }
+}
+@media (max-width: 700px) {
+  .input {
+    width: 200px;
+  }
+  .input:focus {
+    width: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .input {
+    width: 124px;
+  }
+  .input:focus {
+    width: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  .input:focus {
+    width: 190px;
+  }
+}
+.input:focus::-moz-placeholder {
+  color: #ffdf8c;
+}
+.input:focus:-ms-input-placeholder {
+  color: #ffdf8c;
+}
+.input:focus::placeholder {
+  color: #ffdf8c;
+}
+
+.buttonClose {
+  fill: #ffdf8c;
+  width: 22px;
+  height: 22px;
+  opacity: 0.2;
+  position: absolute;
+  right: 14px;
+  top: 12px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.buttonClose:hover {
+  opacity: 0.8;
+}
+
+.searchFocus {
+  width: 22px;
+  height: 22px;
+  opacity: 0.8;
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  fill: #ffdf8c;
+}
+
+.search {
+  width: 22px;
+  height: 22px;
+  opacity: 0.2;
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  fill: var(--input_icon);
+}
+@media (max-width: 900px) {
+  .search,
+  .searchFocus {
+    top: 22px;
+  }
+}
+
+.button {
+  width: 22px;
+  height: 22px;
+  opacity: 0.2;
+  position: absolute;
+  right: 14px;
+  top: 12px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.button:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root{
+  --body_backround: white;
+  --body_color: #333;
+  --input_border: rgba(0, 0, 0, 0.1);
+  --input_icon: rgba(53, 53, 53, 0.685);
+  --category_btn: #444;
+  --category_btn-backround: #f8d57e;
+}
+
+[data-theme="dark"]{
+  --body_backround: #121314;
+  --body_color: white;
+  --input_border: rgba(236, 236, 236, 0.1);
+  --input_icon: rgb(255, 255, 255);
+  --category_btn-color: #ffe39d;
+  --category_btn-backround: #242629
+}
+body{
+  background-color: var(--body_backround);
+  color: var(--body_color);
+}
+
+a{
+  color: unset;
+  text-decoration: none;
+}
