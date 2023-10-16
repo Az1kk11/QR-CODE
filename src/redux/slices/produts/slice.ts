@@ -14,13 +14,15 @@ interface ProductsSliceState {
     isLoading: boolean;
     products: Products[];
     filterProducts: Products[];
+    productDetail: Products[];
 }
 
 
 const initialState: ProductsSliceState = {
     isLoading: false,
     products: [],
-    filterProducts: []
+    filterProducts: [],
+    productDetail: []
 }
 
 export const productSlice = createSlice({
@@ -38,13 +40,18 @@ export const productSlice = createSlice({
             state.isLoading = false
             state.filterProducts = action.payload
         },
+        productDetailSlice: (state, action: PayloadAction<Products[]>) => {
+            state.isLoading = false
+            state.productDetail = action.payload
+        }
     }
 })
 
 export const {
     productStart,
     productSuccess,
-    productFilter
+    productFilter,
+    productDetailSlice
 } = productSlice.actions
 
 export const selectProducts = (state: RootState) => state.product

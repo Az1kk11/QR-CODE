@@ -46,6 +46,9 @@ export const Home: React.FC = () => {
         getCategories()
     }, [])
 
+    console.log(filterProducts);
+    
+
     const productsCard = filterProducts.map((item: Products) => <ProductsCart key={item.id} {...item} />)
     const skeletons = [...new Array(8)].map((_, i) => <Skeleton key={i} />)
 

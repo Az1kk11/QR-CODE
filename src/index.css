@@ -13,6 +13,7 @@
   --input_icon: rgba(53, 53, 53, 0.685);
   --category_btn: #444;
   --category_btn-backround: #f8d57e;
+  --input_backround: #eee;
 }
 
 [data-theme="dark"]{
@@ -21,7 +22,8 @@
   --input_border: rgba(236, 236, 236, 0.1);
   --input_icon: rgb(255, 255, 255);
   --category_btn-color: #ffe39d;
-  --category_btn-backround: #242629
+  --category_btn-backround: #242629;
+  --input_backround: #242629;
 }
 body{
   background-color: var(--body_backround);

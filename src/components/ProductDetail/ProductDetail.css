@@ -1,0 +1,158 @@
+.productDetail {
+  width: 100%;
+  height: auto;
+  padding: 20px 0 50px 0;
+}
+
+.productDetail .detail-content {
+  display: flex;
+  height: 80vh;
+  width: 100%;
+}
+
+.productDetail .detail-content .detail-img {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.productDetail .detail-img img {
+  width: 800px;
+  height: 500px;
+  object-fit: contain;
+}
+
+.productDetail .detail-text {
+  width: 410px !important;
+  padding-left: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.productDetail .detail-text h2 {
+  letter-spacing: 2px;
+}
+.productDetail .detail-text p {
+  margin-top: 5px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.productDetail .detail-text h4 {
+  margin-top: 5px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.productDetail .detail-text .add-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.productDetail .detail-text .add-cart .cart-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  /* margin-right: 98px; */
+}
+
+.productDetail .cart-top .cart-minus,
+.productDetail .cart-top .cart-plus {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ebb735ea;
+  font-size: 20px;
+}
+.productDetail .cart-top .cart-count {
+  width: 260px;
+  height: 44px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  background-color: var(--input_backround);
+  border: 1px solid #aaa;
+}
+.productDetail .add-cart .add-cart-btn {
+  font-size: 16px;
+  padding: 10px 5px;
+  width: 370px;
+  margin-left: 2px;
+  border-radius: 5px;
+  background-color: #ebb735ea;
+  border: none;
+}
+
+.productDetail .product-commit {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.productDetail .product-commit .input-box {
+  flex: 0 1 calc(50% - 1em);
+  position: relative;
+}
+.productDetail .product-commit textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  margin-top: 5px;
+  border: none;
+  background-color: var(--input_backround);
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--body_color);
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.productDetail .product-commit textarea:focus {
+  opacity: 1;
+  outline: none;
+  border: none;
+}
+.productDetail .product-commit .textarea::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  height: 3px;
+  width: 100%;
+  background-color: #ebb735ea;
+  box-shadow: 0 -3px 10px #ebb735ea;
+}
+.productDetail .product-commit .input-box .stars {
+  margin-bottom: 5px;
+}
+.productDetail .product-commit .input-box input {
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  padding: 10px;
+  border: none;
+  background: var(--input_backround);
+  border-radius: 5px;
+}
+.productDetail .product-commit .input-box input:focus {
+  outline: none;
+  border: none;
+}
+.productDetail .product-commit .input-box label {
+  font-size: 16px;
+}
+.productDetail .product-commit .commit-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ebb735ea;
+  font-size: 14px;
+}

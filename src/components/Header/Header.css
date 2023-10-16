@@ -29,3 +29,12 @@
 .navbar i {
     font-size: 22px;
 }
+
+.navbar .close-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .left-close{
+    margin-right: 10px;
+}

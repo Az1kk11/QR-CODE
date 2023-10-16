@@ -2,10 +2,11 @@ import React from 'react'
 import { Products } from '../../redux/slices/produts/slice'
 
 import './ProductsCard.css'
+import { Link } from 'react-router-dom'
 
-export const ProductsCart: React.FC<Products> = ({ image, price, name, category}) => {
+export const ProductsCart: React.FC<Products> = ({ id, image, price, name, category}) => {
   return (
-    <div className="card">
+    <Link to={`product/${id}`} className="card">
       <div className="img-box">
         <img src={image} alt={name} />
       </div>
@@ -15,6 +16,6 @@ export const ProductsCart: React.FC<Products> = ({ image, price, name, category}
       <div className="icon-plus">
         <i className="ri-add-line"></i>
       </div>
-    </div>
+    </Link>
   )
 }
