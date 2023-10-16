@@ -1,6 +1,7 @@
+import React from "react"
 
-
-const CartItems = () => {
+export const CartItems:React.FC = () => {
+    
     return (
         <div className="cart__item">
             <div className="cart__item-img">
@@ -54,5 +55,3 @@ const CartItems = () => {
         </div>
     )
 }
-
-export default CartItems

@@ -1,7 +1,7 @@
 import React from 'react'
 import ContentLoader from 'react-content-loader'
 
-export const BtnSkeleton:React.FC = (props: object) => {
+export const CategoryBtnSkeleton:React.FC = (props: object) => {
     return (
         <ContentLoader
             style={{

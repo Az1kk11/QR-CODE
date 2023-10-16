@@ -1,7 +1,7 @@
 import React from 'react'
 import ContentLoader from 'react-content-loader'
 
-const Skeleton: React.FC = (props: object) => {
+export const ProductSkeleton: React.FC = (props: object) => {
     return (
         <ContentLoader
         style={{ marginLeft: '30px', marginBottom: "50xp", marginTop: "-30px" }}
@@ -20,5 +20,3 @@ const Skeleton: React.FC = (props: object) => {
         </ContentLoader>
     )
 }
-
-export default Skeleton

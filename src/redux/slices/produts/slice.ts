@@ -1,22 +1,6 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit"
 import { RootState } from "../../store"
-
-
-export type Products = {
-    id: number;
-    name: string;
-    price: number;
-    image: string;
-    category: string;
-}
-
-interface ProductsSliceState {
-    isLoading: boolean;
-    products: Products[];
-    filterProducts: Products[];
-    productDetail: Products[];
-}
-
+import { Products, ProductsSliceState } from "./type"
 
 const initialState: ProductsSliceState = {
     isLoading: false,

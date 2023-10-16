@@ -1,8 +1,8 @@
 import React from 'react'
-import { Products } from '../../redux/slices/produts/slice'
+import { Link } from 'react-router-dom'
+import { Products } from '../../redux/slices'
 
 import './ProductsCard.css'
-import { Link } from 'react-router-dom'
 
 export const ProductsCart: React.FC<Products> = ({ id, image, price, name, category}) => {
   return (

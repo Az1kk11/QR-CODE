@@ -1,11 +1,11 @@
+import React, { ChangeEvent } from "react";
 
 import { ReactComponent as Sun } from "./Sun.svg";
 import { ReactComponent as Moon } from "./Moon.svg";
-import { ChangeEvent } from "react";
 
 import "./DarkMode.css";
 
-export const DarkMode = () => {
+export const DarkMode:React.FC = () => {
 
     const setDarkMode = () => {
         document.querySelector("body")?.setAttribute('data-theme', 'dark');

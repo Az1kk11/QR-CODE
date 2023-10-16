@@ -1,6 +1,6 @@
 import React from 'react'
-import { productFilter, selectProducts } from '../../redux/slices/produts/slice'
 import { useDispatch, useSelector } from 'react-redux'
+import { productFilter, selectProducts } from '../../redux/slices'
 
 import './Search.css'
 

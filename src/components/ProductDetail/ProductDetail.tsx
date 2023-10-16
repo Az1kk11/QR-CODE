@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import ProductServices from '../../redux/services/products'
 import { useNavigate, useParams } from 'react-router-dom'
 import ReactStars from "react-stars";
 import { motion } from "framer-motion"
-import { ImageSkeleton } from '../Skeleton/imageSkeleton'
-import { DetailTextSkeleton } from '../Skeleton/detailTextSkeleton';
+import ProductServices from '../../redux/services/products'
+import { DetailTextSkeleton, ImageSkeleton } from '..';
 
 import './ProductDetail.css'
 
@@ -12,7 +11,7 @@ type typeParams = {
     id: string | any
 }
 
-const ProductDetail: React.FC = () => {
+export const ProductDetail: React.FC = () => {
     const [count, setCount] = useState<number>(0)
     const { id } = useParams<typeParams>()
     const navigate = useNavigate()
@@ -114,5 +113,3 @@ const ProductDetail: React.FC = () => {
         </div>
     )
 }
-
-export default ProductDetail

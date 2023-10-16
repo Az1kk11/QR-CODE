@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { DarkMode, Search } from '../'
+import { DarkMode, Search } from '..'
 
 import './Header.css'
 
@@ -11,10 +11,12 @@ export const Header:React.FC = () => {
         <div className="container">
             <div className="navbar">
                 <div className='close-box'>
-                    {location.pathname.startsWith('/product/id') ? ('') : (
+                    {location.pathname.startsWith('/product') ? (
                         <Link to={'/'} className="left-close">
                             <i className="ri-arrow-left-line"></i>
                         </Link>
+                    ) : (
+                        ''
                     )}
                     <DarkMode />
                 </div>

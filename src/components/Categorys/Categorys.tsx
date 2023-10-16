@@ -1,9 +1,9 @@
-import { useSelector } from 'react-redux';
-import { selectCategories } from '../../redux/slices/categories/slice';
-import './Categorys.css'
 import React, { useState } from 'react';
-import { Products, selectProducts } from '../../redux/slices/produts/slice';
-import { BtnSkeleton } from './btnSkeleton';
+import { useSelector } from 'react-redux';
+import { selectCategories } from '../../redux/slices';
+import { CategoryBtnSkeleton } from '..';
+
+import './Categorys.css'
 
 type CategoriesProps = {
     filterCategory: (categoryName: string) => void;
@@ -18,7 +18,7 @@ export const Categorys: React.FC<CategoriesProps> = ({ filterCategory }) => {
         setActiveCategory(categoryName);
     };
 
-    const btnSkeletons = [...new Array(8)].map((_, i) => <BtnSkeleton key={i} />)
+    const btnSkeletons = [...new Array(8)].map((_, i) => <CategoryBtnSkeleton key={i} />)
 
     return (
         <div className="category">
