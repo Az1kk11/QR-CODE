@@ -4,9 +4,9 @@ import { DarkMode, Search } from '..'
 
 import './Header.css'
 
-export const Header:React.FC = () => {
+export const Header: React.FC = () => {
     const location = useLocation()
-    
+
     return (
         <div className="container">
             <div className="navbar">
@@ -20,10 +20,12 @@ export const Header:React.FC = () => {
                     )}
                     <DarkMode />
                 </div>
-                <Search />
-                <Link to={'/cart'} className="cart">
+                <div className="search-box">
+                    <Search />
+                </div>
+                {/* <Link to={'/cart'} className="cart">
                     <i className="ri-shopping-cart-2-line"></i>
-                </Link>
+                </Link> */}
             </div>
         </div>
     )

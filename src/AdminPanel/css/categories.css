@@ -1,0 +1,92 @@
+
+.categorie{
+    width: 100%;
+    height: 100%;
+    padding: 50px 100px;
+    overflow-x: scroll;
+}
+
+.categorie .categorie-title{
+    color: #fff;
+    font-size: 30px;
+}
+
+.categorie form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.categorie form label{
+    color: #ddd;
+    margin-bottom: 5px;
+}
+.categorie form input{
+    height: 40px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.categorie form input:focus{
+    outline: none;
+    box-shadow: 0px 0px 20px rgba(66, 66, 255, 0.781);
+} 
+
+.categorie form button{
+    width: 120px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: none;
+    background-color: #f8d57e;
+}
+
+
+.categorie .all-categories{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.categorie table {
+    color: #fff;
+    width: 100%;
+    background-color: rgb(0 0 0 / 60%);
+    border-radius: 7px;
+    margin-top: 10px;
+    text-align:left;
+    padding: 10px;
+}
+.categorie .category-item{
+    cursor: pointer;
+}
+.categorie table td button{
+    border: none;
+    padding: 2px 5px;
+    background-color: red;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    .categorie{
+        padding: 60px 15px;
+    }
+}
+
+@media (max-width: 460px) {
+    .categorie table{
+        font-size: 14px;
+    }
+}
+
+/* Categories put page */
+
+.category-put {
+    width: 100%;
+    height: 100%;
+    padding: 40px 0;
+}

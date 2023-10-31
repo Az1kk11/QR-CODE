@@ -27,7 +27,18 @@ export const productSlice = createSlice({
         productDetailSlice: (state, action: PayloadAction<Products[]>) => {
             state.isLoading = false
             state.productDetail = action.payload
-        }
+        },
+
+        postProductStart: state => {
+            state.isLoading = true
+        },
+        postProductSuccess: (state, action) => {
+            state.isLoading = false
+            state.products = action.payload
+        },
+        postProductsFailure: state => {
+            state.isLoading = false
+        },
     }
 })
 
@@ -35,7 +46,10 @@ export const {
     productStart,
     productSuccess,
     productFilter,
-    productDetailSlice
+    productDetailSlice,
+    postProductStart,
+    postProductSuccess,
+    postProductsFailure
 } = productSlice.actions
 
 export const selectProducts = (state: RootState) => state.product

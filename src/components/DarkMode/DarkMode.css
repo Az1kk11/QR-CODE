@@ -3,6 +3,12 @@
     margin-left: 10px;
 }
 
+@media (max-width: 900px) {
+    .dark_mode {
+        margin-top: -5px;
+    }
+}
+
 .dark_mode_label {
     width: 65px;
     height: 30px;
@@ -15,6 +21,7 @@
     cursor: pointer;
     transition: 0.3s;
 }
+
 .dark_mode_label:after {
     content: "";
     width: 25px;
