@@ -53,7 +53,7 @@ export const ProductDetail: React.FC = () => {
                     </div>
                     <div className="detail-text">
                         {product ? (
-                            <>
+                            <div className='text'>
                                 <h2>{product.name}</h2>
                                 <p>{product.description}</p>
                                 <h4>Price {product.price}$</h4>
@@ -64,7 +64,7 @@ export const ProductDetail: React.FC = () => {
                                     edit={false}
                                     size={24}
                                 />
-                            </>
+                            </div>
                         ) : (
                             <DetailTextSkeleton />
                         )}
@@ -96,7 +96,7 @@ export const ProductDetail: React.FC = () => {
                             className='stars'
                             value={0}
                             edit={true}
-                            size={54}
+                            size={44}
                         />
                         <label htmlFor="number">Телефон</label>
                         <input type='tel' id='number' placeholder='Номер телефона' required />

@@ -73,3 +73,23 @@
 .dark_mode_input:checked + .dark_mode_label .moon {
     fill: #fff;
 }
+
+@media (max-width: 700px) {
+    .dark_mode_label{
+        width: 50px;
+        height: 25px;
+    }
+    .dark_mode_label svg{
+        width: 15px;
+    }
+    .dark_mode_label:after{
+        width: 20px;
+        height: 19px;
+    }
+    .dark_mode_label .moon{
+        left: 30px;
+    }
+    .dark_mode_input:checked + .dark_mode_label:after{
+        left: 47px;
+    }
+}

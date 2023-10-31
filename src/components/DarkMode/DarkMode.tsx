@@ -6,14 +6,12 @@ import { ReactComponent as Moon } from "./Moon.svg";
 import "./DarkMode.css";
 
 export const DarkMode:React.FC = () => {
-
     const setDarkMode = () => {
         document.querySelector("body")?.setAttribute('data-theme', 'dark');
     };
     const setLightMode = () => {
         document.querySelector("body")?.setAttribute('data-theme', 'light');
     };
-
     const toggleTheme = (e: ChangeEvent<HTMLInputElement>) => {
         if(e.target.checked) setDarkMode();
         else setLightMode()

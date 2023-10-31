@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 
@@ -12,6 +12,7 @@ function LeftNavbar() {
     const navigate = useNavigate()
     const dispatch = useDispatch()
     const location = useLocation()
+    const menuRef = useRef()
 
     const logoutHandler = () => {
         dispatch(logoutAdmin())
@@ -19,16 +20,26 @@ function LeftNavbar() {
         navigate('/admin-login')
     }
 
+    // useEffect(()=>{
+    //     let handler = (e: any) => {
+    //         if (!menuRef.current.contains(e.target)) {
+    //             setOpen(false)
+    //         }
+    //     }
+
+    //     document.addEventListener('mousedown', handler)
+    // })
+
     return (
         <section
             className={isOpen ? ' sidebar-left navactive' : 'sidebar-left'}
             style={location.pathname.startsWith('/admin-login') ? {display:'none'} : {display:'block', width: isOpen ? '250px' : '70px'}}
+            // ref={menuRef}
         >
 
             <i className="ri-menu-line" style={{ display: isOpen ? 'none' : 'block' }} onClick={toggle}></i>
 
-            <div className="logo"
-            >
+            <div className="logo">
                 {isOpen ? (
                     <i className="ri-arrow-left-line"
                         style={{ paddingRight: isOpen ? '10px' : '0px' }}

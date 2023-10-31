@@ -38,6 +38,11 @@
 .navbar .left-close{
     margin-right: 10px;
 }
+@media (max-width: 900px) {
+    .navbar .left-close{
+        margin-top: 12px;
+    }
+}
 .navbar .search-box{
     width: 100%;
     display: flex;
