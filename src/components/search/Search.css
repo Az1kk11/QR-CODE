@@ -39,10 +39,10 @@
 }
 @media (max-width: 500px) {
   .input {
-    width: 250px;
+    width: 200px;
   }
   .input:focus {
-    width: 250px;
+    width: 200px;
   }
 }
 
